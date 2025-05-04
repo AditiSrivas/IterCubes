@@ -18,14 +18,82 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Observations", imgPath: "/images/words/observations.svg" },
+  { text: "Ideas", imgPath: "/images/words/ideas.svg" },
+  { text: "Designs", imgPath: "/images/words/design.svg" },
+  { text: "Results", imgPath: "/images/words/results.svg" },
+  { text: "Observations", imgPath: "/images/words/observations.svg" },
+  { text: "Ideas", imgPath: "/images/words/ideas.svg" },
+  { text: "Designs", imgPath: "/images/words/design.svg" },
+  { text: "Results", imgPath: "/images/words/results.svg" },
+];
+
+const cubeData = [
+  {
+    id: 1,
+    title: "Empathize",
+    description: "Understanding the need and painpoints of the user.",
+    textures: {
+      front: "/images/empathize/front.png",
+      back: "/images/empathize/back.png",
+      top: "/images/empathize/top.png",
+      bottom: "/images/empathize/bottom.png",
+      right: "/images/empathize/right.png",
+      left: "/images/empathize/left.png"
+    }
+  }, 
+  {
+    id: 2,
+    title: "Define",
+    description: "Articulating the core problem to be solved based on user insights",
+    textures: {
+      front: "/images/define/front.png",
+      back: "/images/define/back.png",
+      top: "/images/define/top.png",
+      bottom: "/images/define/bottom.png",
+      right: "/images/define/right.png",
+      left: "/images/define/left.png"
+    }
+  }, 
+  {
+    id: 3,
+    title: "Ideate",
+    description: "Generating creative solutions and exploring possibilities",
+    textures: {
+      front: "/images/ideate/front.png",
+      back: "/images/ideate/back.png",
+      top: "/images/ideate/top.png",
+      bottom: "/images/ideate/bottom.png",
+      right: "/images/ideate/right.png",
+      left: "/images/ideate/left.png"
+    }
+  }, 
+  {
+    id: 4,
+    title: "Prototype",
+    description: "Building simplified versions of the solution to test ideas",
+    textures: {
+      front: "/images/prototype/front.png",
+      back: "/images/prototype/back.png",
+      top: "/images/prototype/top.png",
+      bottom: "/images/prototype/bottom.png",
+      right: "/images/prototype/right.png",
+      left: "/images/prototype/left.png"
+    }
+  }, 
+  {
+    id: 5,
+    title: "Test",
+    description: "Evaluating prototypes with users to refine solutions",
+    textures: {
+      front: "/images/test/front.png",
+      back: "/images/test/back.png",
+      top: "/images/test/top.png",
+      bottom: "/images/test/bottom.png",
+      right: "/images/test/right.png",
+      left: "/images/test/left.png"
+    }
+  }, 
 ];
 
 const counterItems = [
@@ -265,6 +333,7 @@ const socialImgs = [
 
 export {
   words,
+  cubeData,
   abilities,
   logoIconsList,
   counterItems,

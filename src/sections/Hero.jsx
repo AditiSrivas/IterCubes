@@ -3,8 +3,8 @@ import gsap from "gsap";
 
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
-import { words } from "../constants";
-import HeroExperience from "../components/models/hero_models/HeroExperience";
+import { words } from "../constants/index";
+import BeeExperience from "../components/models/bee_model/BeeExperience";
 
 const Hero = () => {
   useGSAP(() => {
@@ -46,17 +46,16 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>into Tangile Experiences</h1>
+              <h1>Making Learning Easy</h1>
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adrian, a developer based in Croatia with a passion for
-              code.
+              Welcome to Itercube, Your personal design learning platform.
             </p>
 
             <Button
-              text="See My Work"
+              text="GET STARTED"
               className="md:w-80 md:h-16 w-60 h-12"
               id="counter"
             />
@@ -66,12 +65,12 @@ const Hero = () => {
         {/* RIGHT: 3D Model or Visual */}
         <figure>
           <div className="hero-3d-layout">
-            <HeroExperience />
+            <BeeExperience />
           </div>
         </figure>
       </div>
 
-      <AnimatedCounter />
+      {/*<AnimatedCounter />*/}
     </section>
   );
 };
