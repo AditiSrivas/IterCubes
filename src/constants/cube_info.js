@@ -474,7 +474,7 @@ const empathizeTopInfo = [
         },
         brands: ["Headspace", "Calm", "Lululemon", "Whole Foods"],
     },
-]
+];
 const empathizeFrontInfo = [
     // 1. Isabella Cruz
     {
@@ -679,7 +679,7 @@ const empathizeFrontInfo = [
             "5:00 PM – Tracks daily wellness habits and disconnects from screens for a nature walk.",
         ],
     },
-]
+];
 const empathizeLeftInfo = [
     // 1. Isabella Cruz
     {
@@ -812,7 +812,7 @@ const empathizeLeftInfo = [
             "Limited support for natural, intuitive scheduling.",
         ],
     },
-]
+];
 const empathizeRightInfo = [
     "The local grocery store's self-checkout system frequently experiences errors, causing long wait times for customers and leading to frustration among employees who must manually resolve the issues.",
     "Online education platforms are seeing an increase in drop-out rates because students feel isolated and unsupported due to lack of personalized interactions or mentorship.",
@@ -834,7 +834,7 @@ const empathizeRightInfo = [
     "Elderly patients with chronic conditions face difficulty managing their medications due to complex dosage schedules and lack of user-friendly reminder systems.",
     "Parents of young children often feel overwhelmed by the vast array of parenting advice online, leading to confusion and uncertainty when trying to find reliable, evidence-based resources.",
     "Local governments struggle with inefficient waste management systems, resulting in inconsistent pickup schedules, overflowing bins, and public dissatisfaction in both residential and commercial areas.",
-]
+];
 const empathizeBackInfo = [
     { moodBoard: "/images/empathizeBack/1.png" },
     { moodBoard: "/images/empathizeBack/2.png" },
@@ -848,7 +848,7 @@ const empathizeBackInfo = [
     { moodBoard: "/images/empathizeBack/1.png" },
     { moodBoard: "/images/empathizeBack/1.png" },
     { moodBoard: "/images/empathizeBack/1.png" },
-]
+];
 
 const defineTopInfo =[
     "Attention span – Limited user focus time (e.g., 8-second rule).",
@@ -881,7 +881,7 @@ const defineTopInfo =[
     "Scalability – Should handle growth from 100 to 10,000 users.",
     "Reliability – Minimal downtime or failure rate.",
     "Brand alignment – Must follow a brand’s tone, color, and style guide.",
-]
+];
 const defineFrontInfo = {
     priorities: [
         "Essential",
@@ -895,7 +895,7 @@ const defineFrontInfo = {
         "Nice to have": "Adds value but can be deprioritized",
         "Future consideration": "Worth exploring in future iterations"
     }
-}
+};
 const defineRightInfo =[
     "Must be designed for a fictional character (e.g., Batman, a time traveler, or an alien).",
     "Only usable during nighttime – Solution must be relevant or functional only after dark.",
@@ -917,13 +917,461 @@ const defineRightInfo =[
     "Designed to provoke emotion (e.g., nostalgia, surprise, or joy) – Emotional design goal.",
     "Built for a future society in 2075 – Consider futuristic norms and technologies.",
     "Designed to be culturally neutral across 5 continents – No culturally specific symbols or language.",
-]
-const defineBackInfo =[
-    
-]
-const defineLeftInfo =[
-    
-]
+];
+const defineLeftInfo = [
+    {
+      question: "Which constraint would most impact a food delivery app for elderly users?",
+      options: ["Bright color scheme", "One-click ordering", "Voice navigation", "Social media sharing"],
+      correctAnswer: "Voice navigation",
+      explanation: "Voice navigation improves accessibility for visually impaired or less tech-savvy elderly users."
+    },
+    {
+      question: "If your app must work offline, which feature becomes most critical?",
+      options: ["Cloud sync", "Local data storage", "Push notifications", "App store reviews"],
+      correctAnswer: "Local data storage",
+      explanation: "Offline functionality depends on local data storage."
+    },
+    {
+      question: "Your solution must be usable by 6-year-old children. What constraint matters most?",
+      options: ["Use of long-form text instructions", "Bright visuals and simple icons", "Keyboard shortcuts", "Multi-step onboarding"],
+      correctAnswer: "Bright visuals and simple icons"
+    },
+    {
+      question: "You’re designing for users with color blindness. Which design element should be prioritized?",
+      options: ["Sound effects", "Text-only UI", "High-contrast, pattern-based visuals", "Complex color gradients"],
+      correctAnswer: "High-contrast, pattern-based visuals"
+    },
+    {
+      question: "Which constraint is least important when building a budgeting app for accountants?",
+      options: ["Secure login", "Real-time syncing with banks", "Gamified interface", "Data accuracy"],
+      correctAnswer: "Gamified interface",
+      explanation: "Accountants prioritize functionality over gamification."
+    },
+    {
+      question: "Which constraint could make a climate-awareness campaign more impactful?",
+      options: ["Limited use of plastic for materials", "Neon lighting", "Animated emojis", "Unskippable video ads"],
+      correctAnswer: "Limited use of plastic for materials"
+    },
+    {
+      question: "You’re designing for rural areas with limited connectivity. What’s the most important constraint?",
+      options: ["Offline access", "AR features", "Cloud-only login", "Real-time collaboration"],
+      correctAnswer: "Offline access"
+    },
+    {
+      question: "If a device must be used in loud environments, what should the interface emphasize?",
+      options: ["Voice feedback", "Bright colors and visual cues", "Vibration or haptic feedback", "Audio tutorials"],
+      correctAnswer: "Vibration or haptic feedback"
+    },
+    {
+      question: "Which constraint will most impact a product designed for frequent travelers?",
+      options: ["Large screen size", "Portability", "Requires setup at home", "Needs a stable power source"],
+      correctAnswer: "Portability"
+    },
+    {
+      question: "You’re building an app for visually impaired users. Which constraint should be avoided?",
+      options: ["Text-to-speech", "Gesture controls", "Color-coded categories only", "Screen reader compatibility"],
+      correctAnswer: "Color-coded categories only"
+    },
+    {
+      question: "Your solution must be built with recycled materials. What design priority changes?",
+      options: ["Branding", "Component availability", "User testing", "Mobile compatibility"],
+      correctAnswer: "Component availability"
+    },
+    {
+      question: "If the budget is extremely limited, which feature is likely to be cut first?",
+      options: ["Core function", "Decorative animation", "User testing", "Secure data handling"],
+      correctAnswer: "Decorative animation"
+    },
+    {
+      question: "Which constraint would affect an app's usability in bright sunlight?",
+      options: ["Battery optimization", "High contrast UI", "Screen touch sensitivity", "Low volume setting"],
+      correctAnswer: "High contrast UI"
+    },
+    {
+      question: "You’re making an app for non-native English speakers. What’s the most important design constraint?",
+      options: ["Formal language", "Complex UI", "Multilingual support", "Fast animations"],
+      correctAnswer: "Multilingual support"
+    },
+    {
+      question: "What constraint would be most important for a wearable fitness device?",
+      options: ["Waterproof design", "Auto-sync with car stereo", "Virtual reality support", "Social media notifications"],
+      correctAnswer: "Waterproof design"
+    },
+    {
+      question: "Which constraint would make designing for children harder?",
+      options: ["Limited attention span", "Simple interfaces", "Fun visuals", "Interactive sounds"],
+      correctAnswer: "Limited attention span"
+    },
+    {
+      question: "Which constraint is most essential for designing a product for users in extreme cold environments?",
+      options: ["Large touchscreen", "Metal casing", "Glove-friendly controls", "Warm color palette"],
+      correctAnswer: "Glove-friendly controls"
+    },
+    {
+      question: "If you must design for future users in the year 2075, what constraint should guide you?",
+      options: ["Legacy device support", "Predictive AI adaptability", "Minimalist flat design", "Current trends"],
+      correctAnswer: "Predictive AI adaptability"
+    },
+    {
+      question: "Which constraint should be prioritized for a public kiosk in a train station?",
+      options: ["Requires headphones", "Always connected to Wi-Fi", "Waterproof and vandal-resistant", "Long tutorial video"],
+      correctAnswer: "Waterproof and vandal-resistant"
+    },
+    {
+      question: "What constraint would you most prioritize in a healthcare app for emergency responders?",
+      options: ["Minimal loading time", "Ad banner integration", "Multi-step verification", "Custom avatars"],
+      correctAnswer: "Minimal loading time"
+    }
+];
+  
+const ideateTopInfo = [
+    "Design a version that works without any electricity.",
+    "Make the product edible — what changes?",
+    "Reimagine the solution as a board game.",
+    "Create a version for use in outer space.",
+    "Turn it into a physical object — no screens allowed.",
+    "Make it accessible for someone with only one hand.",
+    "Strip the idea down to its simplest paper-and-pencil version.",
+    "Imagine it was created 200 years ago — how would it work?",
+    "How would a child design this product?",
+    "Turn your solution into a subscription service.",
+    "Make it work entirely through sound and voice.",
+    "Design it for someone who only has 2 minutes a day to use it.",
+    "Remove its most obvious feature — how else could it still work?",
+    "Adapt it for use underwater.",
+    "Turn it into a wearable item.",
+    "What if the product had to make people laugh to work?",
+    "Redesign it as a community-owned or crowdsourced solution.",
+    "Design a version that rewards users for not using it.",
+    "Shrink the entire solution into something that fits in a wallet.",
+    "Make it usable by someone who can’t read.",
+    "Design it to fail — what vulnerabilities appear?",
+    "Reverse its main goal. What would the opposite look like?",
+    "Imagine it as a pet or companion, not a tool.",
+    "Make it so intuitive that no onboarding or tutorial is required.",
+    "Design for extreme environments — e.g., deserts, war zones, or Antarctica.",
+];
+const ideateFrontInfo = [
+    "Sketch 3 different layouts for your interface.",
+    "List 3 physical form factors your product could take (e.g., watch, cube, pen)",
+    "Design 3 button styles for your main action.",
+    "Come up with 3 feedback mechanisms (visual, sound, haptic).",
+    "Design 3 onboarding experiences in under 3 steps each.",
+    "Create 3 versions of your prototype for different age groups.",
+    "Sketch 3 ways users could interact with your product without touching it.",
+    "Mock up 3 different start screens.",
+    "Imagine 3 materials your product could be made of.",
+    "Design 3 navigation systems for your app.",
+    "Prototype 3 ways your solution could work offline.",
+    "Sketch 3 “what if it breaks?” solutions.",
+    "Come up with 3 low-cost versions of your idea.",
+    "List 3 alternate input methods (voice, gestures, sensors).",
+    "Create 3 different form factors using only cardboard.",
+    "Think of 3 sounds your product might make — and why.",
+    "Design 3 quick feedback messages (e.g., success, error, loading).",
+    "Sketch 3 different icon sets for your key actions.",
+    "Come up with 3 transition animations for the UI.",
+    "Imagine 3 interactions with no screen at all.",
+    "Build 3 paper prototypes for different use contexts (e.g., home, outdoor, transit).",
+    "Create 3 user flows that achieve the same goal in different ways.",
+    "Prototype 3 failure states — what happens when something goes wrong?",
+    "List 3 environmental constraints and how your prototype adapts.",
+    "Sketch 3 alternative interfaces for the visually impaired.",
+    "Create 3 onboarding flows that teach without using words.",
+    "Design 3 variations of a loading screen that keeps the user engaged.",
+    "List 3 sensor-based interactions your prototype could use.",
+    "Sketch 3 “first use” moments to build user trust.",
+    "Prototype 3 ways users might misuse your product — and design around them.",
+];
+const ideateLeftInfo = [
+
+];
+const ideateRightInfo = [
+    {
+        id: "airbnb",
+        name: "Airbnb",
+        category: "platforms",
+        description: "Peer-to-peer marketplace for short-term lodging",
+        imageUrl: "/images/logos/airbnb.png",
+        keyFeatures: [
+            "Searchable listing of homes",
+            "User reviews and ratings",
+            "Secure payment processing"
+        ],
+        whyItWorks: "Turned unused living space into income sources, challenging the hotel industry.",
+        innovationLessons: "Trust and reputation systems can enable safe peer-to-peer transactions."
+    },
+    {
+        id: "duolingo",
+        name: "Duolingo",
+        category: "apps",
+        description: "Gamified language learning app",
+        imageUrl: "/images/logos/duolingo.png",
+        keyFeatures: [
+            "Bite-sized lessons",
+            "Gamified rewards system",
+            "Speech recognition for practice"
+        ],
+        whyItWorks: "It made learning a new language addictive and accessible to everyone.",
+        innovationLessons: "Gamification can turn tedious learning into engaging daily habits."
+    },
+    {
+        id: "tesla",
+        name: "Tesla",
+        category: "hardware",
+        description: "Electric vehicle manufacturer disrupting the automotive industry",
+        imageUrl: "/images/logos/tesla.png",
+        keyFeatures: [
+            "Electric drivetrain",
+            "Autopilot functionality",
+            "Over-the-air software updates"
+        ],
+        whyItWorks: "Tesla made electric cars desirable, not just sustainable.",
+        innovationLessons: "Innovation scales when it blends sustainability with aspirational design."
+    },
+    {
+        id: "spotify",
+        name: "Spotify",
+        category: "apps",
+        description: "Music streaming service with on-demand access",
+        imageUrl: "/images/logos/spotify.png",
+        keyFeatures: [
+            "Personalized playlists",
+            "Real-time streaming",
+            "Offline listening"
+        ],
+        whyItWorks: "It gave users instant, legal access to virtually any song.",
+        innovationLessons: "Ease of access can eliminate piracy and redefine consumption."
+    },
+    {
+        id: "tiktok",
+        name: "TikTok",
+        category: "apps",
+        description: "Short-form video sharing platform with a powerful algorithm",
+        imageUrl: "/images/logos/tiktok.png",
+        keyFeatures: [
+            "Auto-play video feed",
+            "Powerful content discovery",
+            "Creative editing tools"
+        ],
+        whyItWorks: "It removed content creation barriers and tapped into viral culture.",
+        innovationLessons: "Lowering creative friction can empower a massive creator base."
+    },
+    {
+        id: "ikea",
+        name: "IKEA",
+        category: "retail",
+        description: "Flat-pack furniture and home goods retailer",
+        imageUrl: "/images/logos/ikea.png",
+        keyFeatures: [
+            "Self-assembly kits",
+            "In-store experience",
+            "Affordable modern design"
+        ],
+        whyItWorks: "It democratized good design through low-cost modular systems.",
+        innovationLessons: "User effort can be traded for cost savings at scale."
+    },
+    {
+        id: "stripe",
+        name: "Stripe",
+        category: "platforms",
+        description: "Developer-friendly payment infrastructure",
+        imageUrl: "/images/logos/stripe.png",
+        keyFeatures: [
+            "Easy API integration",
+            "Fraud detection",
+            "Global payments"
+        ],
+        whyItWorks: "Made online payments accessible to startups and solo developers.",
+        innovationLessons: "Powerful back-end tools can grow by simplifying complexity."
+    },
+    {
+        id: "notion",
+        name: "Notion",
+        category: "apps",
+        description: "All-in-one workspace for notes, tasks, and wikis",
+        imageUrl: "/images/logos/notion.png",
+        keyFeatures: [
+            "Blocks-based content editing",
+            "Custom databases",
+            "Team collaboration"
+        ],
+        whyItWorks: "It merged productivity tools into a single modular platform.",
+        innovationLessons: "Flexibility and elegance can drive user love and loyalty."
+    },
+    {
+        id: "zoom",
+        name: "Zoom",
+        category: "apps",
+        description: "Video conferencing platform known for reliability and ease",
+        imageUrl: "/images/logos/zoom.png",
+        keyFeatures: [
+            "High-quality video calls",
+            "Screen sharing",
+            "Virtual backgrounds"
+        ],
+        whyItWorks: "It became the default for remote communication due to simplicity.",
+        innovationLessons: "Focus on performance and UX can outpace established players."
+    },
+    {
+        id: "patreon",
+        name: "Patreon",
+        category: "platforms",
+        description: "Membership platform for creators to earn directly from fans",
+        imageUrl: "/images/logos/pateron.png",
+        keyFeatures: [
+            "Recurring payments",
+            "Exclusive content",
+            "Creator dashboards"
+        ],
+        whyItWorks: "Gave creators financial independence through direct support.",
+        innovationLessons: "Middleman-free platforms can redefine creative economies."
+    },
+    {
+        id: "figma",
+        name: "Figma",
+        category: "tools",
+        description: "Browser-based collaborative design tool",
+        imageUrl: "/images/logos/figma.png",
+        keyFeatures: [
+            "Real-time collaboration",
+            "Cloud storage",
+            "Component-based design"
+        ],
+        whyItWorks: "Brought design tools to the browser and made them multiplayer.",
+        innovationLessons: "Collaboration-first products outperform solo-first workflows."
+    },
+    {
+        id: "canvas",
+        name: "Canva",
+        category: "tools",
+        description: "Graphic design platform for non-designers",
+        imageUrl: "/images/logos/canva.png",
+        keyFeatures: [
+            "Drag-and-drop editing",
+            "Templates for everything",
+            "Team sharing"
+        ],
+        whyItWorks: "It gave anyone the power to create polished graphics quickly.",
+        innovationLessons: "Access trumps expertise when the UI is empowering."
+    },
+    {
+        id: "dropbox",
+        name: "Dropbox",
+        category: "apps",
+        description: "Cloud storage and file synchronization service",
+        imageUrl: "/images/logos/dropbox.png",
+        keyFeatures: [
+            "Auto-sync folders",
+            "Cross-device access",
+            "File recovery"
+        ],
+        whyItWorks: "It solved the ‘where’s my file?’ problem with seamless syncing.",
+        innovationLessons: "Invisible utility builds deep user trust and habit."
+    },
+    {
+        id: "robinhood",
+        name: "Robinhood",
+        category: "apps",
+        description: "Commission-free stock trading app",
+        imageUrl: "/images/logos/robinhood.png",
+        keyFeatures: [
+            "Zero fees",
+            "Simple UX",
+            "Instant deposits"
+        ],
+        whyItWorks: "Removed financial barriers to trading for a new generation.",
+        innovationLessons: "Democratizing access disrupts entrenched gatekeepers."
+    },
+    {
+        id: "googlemaps",
+        name: "Google Maps",
+        category: "apps",
+        description: "Navigation and mapping platform with real-time traffic data",
+        imageUrl: "/images/logos/googlemaps.png",
+        keyFeatures: [
+            "Turn-by-turn navigation",
+            "Live traffic updates",
+            "Explore nearby places"
+        ],
+        whyItWorks: "Turned complex geospatial data into intuitive guidance.",
+        innovationLessons: "Layered data visualization transforms decision-making."
+    },
+    {
+        id: "coursera",
+        name: "Coursera",
+        category: "platforms",
+        description: "Online learning platform with university partnerships",
+        imageUrl: "/images/logos/coursera.png",
+        keyFeatures: [
+            "Accredited courses",
+            "Self-paced learning",
+            "Mobile access"
+        ],
+        whyItWorks: "Brought elite education to global learners at scale.",
+        innovationLessons: "Scalability + legitimacy = learning revolution."
+    },
+    {
+        id: "waze",
+        name: "Waze",
+        category: "apps",
+        description: "Community-based traffic and navigation app",
+        imageUrl: "/images/logos/waze.png",
+        keyFeatures: [
+            "User-reported hazards",
+            "Live rerouting",
+            "Crowdsourced data"
+        ],
+        whyItWorks: "Taps into driver community to outsmart traffic in real time.",
+        innovationLessons: "Crowdsourcing real-world data creates real-world value."
+    },
+    {
+        id: "kickstarter",
+        name: "Kickstarter",
+        category: "platforms",
+        description: "Crowdfunding platform for creative projects",
+        imageUrl: "/images/logos/kickstarter.png",
+        keyFeatures: [
+            "Backer rewards",
+            "Project storytelling",
+            "Funding goals"
+        ],
+        whyItWorks: "Let creators validate ideas and raise capital from fans.",
+        innovationLessons: "Funding + feedback before launch de-risks innovation."
+    },
+    {
+        id: "headspace",
+        name: "Headspace",
+        category: "apps",
+        description: "Meditation and mindfulness app",
+        imageUrl: "/images/logos/headspace.png",
+        keyFeatures: [
+            "Guided meditations",
+            "Sleep stories",
+            "Progress tracking"
+        ],
+        whyItWorks: "It made mental wellness mainstream and app-friendly.",
+        innovationLessons: "Beautiful UX can normalize once-taboo self-care habits."
+    },
+    {
+        id: "blinkist",
+        name: "Blinkist",
+        category: "apps",
+        description: "Summarized nonfiction book app for quick learning",
+        imageUrl: "/images/logos/blinkist.png",
+        keyFeatures: [
+            "15-min audio summaries",
+            "Curated reading lists",
+            "Offline mode"
+        ],
+        whyItWorks: "It gave busy people a shortcut to stay informed.",
+        innovationLessons: "Condensed content fits modern attention spans."
+    }
+];
+const ideateBackInfo = [
+
+];
+
 
 export {
     empathizeFrontInfo,
@@ -932,9 +1380,14 @@ export {
     empathizeTopInfo,
     empathizeBackInfo,
 
-    defineBackInfo,
     defineFrontInfo,
     defineLeftInfo,
     defineRightInfo,
     defineTopInfo,
+
+    ideateBackInfo,
+    ideateFrontInfo,
+    ideateLeftInfo,
+    ideateRightInfo,
+    ideateTopInfo,
 };

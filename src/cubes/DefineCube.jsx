@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import DefineTop from '../components/DefineCube/DefineTop';
 import DefineFront from '../components/DefineCube/DefineFront';
 import DefineRight from '../components/DefineCube/DefineRight';
+import DefineBack from '../components/DefineCube/DefineBack'; 
+import DefineLeft from '../components/DefineCube/DefineLeft'; // Import the new component
 
 const DefineCube = () => {
   const sides = ['top', 'front', 'right', 'back', 'left'];
@@ -12,6 +14,7 @@ const DefineCube = () => {
   const [prioritizedConstraints, setPrioritizedConstraints] = useState([]);
   const [alternativeConstraints, setAlternativeConstraints] = useState([]);
   const [constraintExplanations, setConstraintExplanations] = useState({});
+  const [quizScore, setQuizScore] = useState(null);
   
   // Get location to access state passed from EmpathizeRight or any previous step
   const location = useLocation();
@@ -78,6 +81,17 @@ const DefineCube = () => {
     }, 3000);
   };
 
+  const handleQuizComplete = (score) => {
+    console.log("Quiz completed with score:", score);
+    setQuizScore(score);
+    
+    // Show a success message
+    setDisplayMessage(`Quiz completed! Your score: ${score}%`);
+    setTimeout(() => {
+      setDisplayMessage('');
+    }, 3000);
+  };
+
   const renderContent = () => {
     switch(activeSide) {
       case 'top':
@@ -98,9 +112,15 @@ const DefineCube = () => {
           />
         );
       case 'back':
-        return <div className="p-6">Back side content (to be implemented)</div>;
+        return (
+          <DefineBack 
+            selectedProblem={selectedProblem}
+            prioritizedConstraints={alternativeConstraints.length > 0 ? alternativeConstraints : prioritizedConstraints}
+            constraintExplanations={constraintExplanations}
+          />
+        );
       case 'left':
-        return <div className="p-6">Left side content (to be implemented)</div>;
+        return <DefineLeft onQuizComplete={handleQuizComplete} />;
       default:
         return <div className='p-6'>Select a side</div>;
     }
@@ -116,6 +136,7 @@ const DefineCube = () => {
           <p>Selected Constraints: {selectedConstraints.length > 0 ? selectedConstraints.join(', ') : 'None'}</p>
           <p>Prioritized Constraints: {prioritizedConstraints.length > 0 ? prioritizedConstraints.join(', ') : 'None'}</p>
           <p>Alternative Constraints: {alternativeConstraints.length > 0 ? alternativeConstraints.join(', ') : 'None'}</p>
+          <p>Quiz Score: {quizScore !== null ? `${quizScore}%` : 'Not taken'}</p>
           <p>Current Side: {activeSide}</p>
         </div>
       );
@@ -134,6 +155,11 @@ const DefineCube = () => {
           {selectedConstraints.length > 0 && (
             <span className="text-sm text-gray-400">
               • {selectedConstraints.length} constraints selected
+            </span>
+          )}
+          {quizScore !== null && (
+            <span className={`text-sm ml-2 ${quizScore >= 70 ? 'text-green-400' : quizScore >= 40 ? 'text-yellow-400' : 'text-red-400'}`}>
+              • Quiz Score: {quizScore}%
             </span>
           )}
           {selectedProblem && (
@@ -177,14 +203,6 @@ const DefineCube = () => {
               </div>
             </div>
             
-            {/* Show problem statement on front side if available */}
-            {activeSide === 'front' && selectedProblem && (
-              <div className="bg-gray-800 p-4 mb-6 rounded-lg border-l-4 border-green-500">
-                <p className="text-sm text-gray-400 mb-1">Selected Problem Statement:</p>
-                <p className="text-lg font-medium text-white">{selectedProblem}</p>
-              </div>
-            )}
-            
             {renderContent()}
 
           </div>
@@ -198,6 +216,7 @@ const DefineCube = () => {
             →
           </button>
         </div>
+        
       </div>
     </div>
   );

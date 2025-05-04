@@ -168,7 +168,7 @@ const DefineFront = ({ selectedProblem, selectedConstraints, onConstraintsPriori
                 ))}
             </div>
             
-            {/* Confirm Button */}
+            {/* Confirm Button  */}
             <div className="flex justify-center mt-8">
                 <button
                     className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-md font-semibold transition-colors duration-200"

@@ -120,7 +120,7 @@ const DefineRight = ({ selectedConstraints, onConstraintUpdate }) => {
             )}
             
             <div className="mb-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">Constraint Alternatives</h3>
+                <h3 className="text-xl font-semibold mb-2">Constraint Challenges</h3>
                 <p className="text-gray-400 mb-2">
                     For each original constraint, consider an unexpected alternative.
                 </p>
